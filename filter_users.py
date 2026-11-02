@@ -31,7 +31,7 @@ def filter_users_by_email(email):
       print(user)
 
 
-if __name__ == "__main__":
+def main():
     filter_option = input("What would you like to filter by? (Currently, only 'name' is supported): ").strip().lower()
 
     if filter_option == "name":
@@ -39,3 +39,7 @@ if __name__ == "__main__":
         filter_users_by_name(name_to_search)
     else:
         print("Filtering by that option is not yet supported.")
+
+
+if __name__ == "__main__":
+    main()
